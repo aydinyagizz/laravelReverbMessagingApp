@@ -20,12 +20,12 @@
 
                             <div class="mb-3">
                                 <label for="participants" class="form-label">Katılımcılar</label>
-                                <select  class="form-select @error('participants') is-invalid @enderror" id="participants" name="participants[]" required>
+                                <select multiple class="form-select @error('participants') is-invalid @enderror" id="participants" name="participants[]" required>
                                     @foreach($users as $user)
                                         <option value="{{ $user->id }}">{{ $user->name }}</option>
                                     @endforeach
                                 </select>
-{{--                                <div class="form-text">Birden fazla kullanıcı seçmek için Ctrl tuşunu basılı tutun.</div>--}}
+                                <div class="form-text">Birden fazla kullanıcı seçmek için Ctrl tuşunu basılı tutun.</div>
                                 @error('participants')
                                 <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror
