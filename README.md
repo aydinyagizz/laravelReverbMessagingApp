@@ -88,8 +88,8 @@ npm run dev
 
 Laravel'in standart kullanıcı kimlik doğrulama sistemi kullanılmaktadır. Kayıt ve giriş işlemleri /register ve /login sayfalarından yapılabilir.
 
-## Kullanıcı 1 => admin@gmail.com : 123456
-## Kullanıcı 2 => user@gmail.com : 123456
+### Kullanıcı 1 => admin@gmail.com : 123456
+### Kullanıcı 2 => user@gmail.com : 123456
 
 
 Komut Açıklamaları
